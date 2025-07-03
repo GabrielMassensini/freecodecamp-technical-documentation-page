@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Introduction to Git and GitHub</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>Git and GitHub Documentation</h1></header>
+        <div class="nav-links">
+            <a class="nav-link" href="#Introduction_to_Git_and_GitHub">Introduction to Git and GitHub</a>
+            <a class="nav-link" href="#What_is_Git?">What is Git?</a>
+            <a class="nav-link" href="#Basic_Git_Commands">Basic Git Commands</a>
+            <a class="nav-link" href="#What_is_GitHub?">What is GitHub?</a>
+            <a class="nav-link" href="#Basic_GitHub_Workflow">Basic GitHub Workflow</a>
+            <a class="nav-link" href="#Tips_and_Best_Practices">Tips and Best Practices</a>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_Git_and_GitHub">
+            <header>
+                <h2>Introduction to Git and GitHub</h2>
+            </header>
+            <p>
+                This documentation provides a basic overview of Git, a powerful version control system, and GitHub, a popular platform for hosting Git repositories and facilitating collaboration.
+            </p>
+        </section>
+
+        <section class="main-section" id="What_is_Git?">
+            <header>
+                <h2>What is Git?</h2>
+            </header>
+            <p>
+                Git is a distributed version control system (DVCS) that tracks changes in any set of computer files, usually used for coordinating work among programmers collaboratively developing source code during software development. It's designed for speed, data integrity, and support for distributed, non-linear workflows.
+            </p>
+            <p>
+                Unlike older centralized version control systems, Git allows every developer to have a full copy of the entire repository's history, enabling offline work and robust branching capabilities. This decentralized nature significantly improves resilience and performance.
+            </p>               
+            <code>
+                git init 
+                <br>
+                git status
+            </code>
+        </section>
+
+        <section class="main-section" id="Basic_Git_Commands">
+            <header>
+                <h2>Basic Git Commands</h2>
+            </header>
+            <p>
+                Working with Git involves a few fundamental commands that you'll use daily to manage your project's history. These commands allow you to initialize a repository, add changes to a staging area, and commit those changes to your project's history.
+            </p>
+            <p>
+                Understanding the commit cycle (add, commit) is crucial for maintaining a clean and understandable project history. Each commit represents a snapshot of your project at a specific point in time.
+            </p>
+            <ul>
+                <li>git add: Stages changes for the next commit.</li>
+                <li>git commit: Records staged changes to the repository.</li>
+                <li>git push: Uploads local repository content to a remote repository.</li>
+            </ul>
+            <code>
+                git add .
+                <br>
+                git commit -m "Initial commit of project files"
+            </code>
+        </section>
+
+        <section class="main-section" id="What_is_GitHub?">
+            <header>
+                <h2>What is GitHub?</h2>
+            </header>
+            <p>
+                GitHub is a web-based platform built on top of Git, providing a centralized location for hosting Git repositories. It extends Git's capabilities by offering features for collaboration, project management, and code review, making it incredibly popular among open-source projects and professional teams.
+            </p>
+            <p>
+                Beyond just hosting code, GitHub facilitates social coding, allowing developers to discover projects, contribute to them, and showcase their work. It's become a de facto standard for code collaboration in the industry.
+            </p>
+            <code>
+                # No specific GitHub command, but typically involves
+                <br>
+                # browser interaction for repository creation.
+            </code>
+        </section>
+
+        <section class="main-section" id="Basic_GitHub_Workflow">
+            <header>
+                <h2>Basic GitHub Workflow</h2>
+            </header>
+            <p>
+                A typical workflow on GitHub involves cloning a repository, creating new branches for features or fixes, making changes, and then submitting those changes for review via Pull Requests. This process ensures code quality and team coordination.
+             </p>
+            <p>
+                Pull Requests are a core feature of GitHub, allowing contributors to propose changes and discuss them before merging into the main codebase. They are essential for maintaining code quality and facilitating code review.
+            </p>
+            <ul>
+                <li>Create a new repository.</li>
+                <li>Clone an existing repository.</li>
+                <li>Create a new branch.</li>
+                <li>Open a Pull Request.</li>
+            </ul>
+            <code>                    
+                git clone https://github.com/your-username/your-repo.git
+                <br>
+                git checkout -b new-feature-branch
+            </code>
+        </section>
+
+        <section class="main-section" id="Tips_and_Best_Practices">
+            <header>
+                <h2>Tips and Best Practices</h2>
+            </header>
+            <p>
+                To maximize your efficiency and maintain a healthy repository, consider these best practices when working with Git and GitHub. Clear communication through commit messages and disciplined branching are key for successful collaboration.
+            </p>
+            <p>
+                Regularly pulling changes from the remote repository helps keep your local copy up-to-date and minimizes merge conflicts, especially in team environments.
+            </p>
+            <ul>
+                <li>Write clear and concise commit messages.</li>
+                <li>Commit frequently and in small, logical chunks.</li>
+                <li>Synchronize your local repository often (<code>git pull</code>).</li>
+                <li>Review Pull Requests thoroughly.</li>
+            </ul>
+            <code>
+                git pull origin main
+            </code>
+        </section>
+    </main>
+</body>
+</html>
